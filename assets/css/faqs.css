@@ -1,0 +1,167 @@
+html,
+body {
+  margin: 0;
+  background-color: rgb(58, 54, 54);
+  color: rgb(250, 246, 238);
+  font-family: Helvetica;
+}
+
+/*header*/
+
+#top {
+  padding: 10px;
+  background-color: gray;
+  border-bottom: 2px solid rgb(92, 90, 90);
+  width: 100%;
+  display: block;
+  position: fixed;
+  top: 0;
+}
+
+#top nav {
+  justify-content: left;
+  display: flex;
+}
+
+#top a {
+  padding: 5px 15px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Helvetica";
+  text-decoration: none;
+  color: white;
+}
+
+#top a:hover {
+  color: rgb(152, 252, 252);
+}
+
+#top nav img {
+  width: 35px;
+  height: 35px;
+}
+/*header finished*/
+
+#welcomeContainer {
+  display: flex;
+  background-image: url("../images/bg-3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+}
+
+#welcomeContainer .welcomeText {
+  margin: 25px;
+  width: 40%;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+#welcomeContainer .welcomeText h1 {
+  border-bottom: 1px solid white;
+  padding: 10px;
+}
+
+#welcomeContainer .welcomeText span {
+  font-style: italic;
+}
+
+#welcomeContainer img {
+  width: 30%;
+  height: 230px;
+  margin: 45px;
+}
+
+.centeredHeading {
+  margin-top: 65px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#faqsLinksContainer {
+  text-align: center;
+  font-size: 24px;
+  border-bottom: 3px solid white;
+  padding: 14px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#faqsLinksContainer a {
+  text-decoration: none;
+  color: rgb(168, 168, 168);
+  padding: 0px 10px;
+}
+
+#faqsLinksContainer a:hover {
+  color: white;
+}
+
+/*footer*/
+
+footer {
+  padding: 15px;
+  text-align: center;
+  background-color: rgb(84, 88, 88);
+  color: white;
+  font-size: 18px;
+}
+
+footer span {
+  padding: 5px;
+}
+
+footer a {
+  text-decoration: none;
+  padding: 5px;
+  color: white;
+  float: inline-end;
+}
+
+footer a:hover {
+  color: rgb(152, 252, 252);
+}
+
+.faqSection {
+  margin: 30px 85px;
+  width: 85%;
+  border-bottom: 2px solid grey;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding: 30px;
+}
+
+.faqQuestions {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.faqQuestions div {
+  padding: 20px;
+}
+
+.faqQuestions img {
+  width: 35%;
+  height: 30%;
+}
+
+.faqSection .goToTopLink {
+  text-align: center;
+}
+
+.faqSection .goToTopLink a {
+  text-decoration: none;
+  font-size: 18px;
+  color: grey;
+}
+
+.faqSection .goToTopLink a:hover {
+  color: white;
+}

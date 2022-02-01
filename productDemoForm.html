@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/demoForm.css">
+    <title>Product Demo Form</title>
+</head>
+<body>
+    <header id="top">   
+        <nav>
+            <img src="assets/images/icons8-pizza-64.png" alt="logo">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="productDemoForm.html">Product Demo</a>
+            <a href="faqs.html">FAQs</a>
+        </nav>
+    </header>
+
+    <div id="demoContainer">
+        <div id="demoText">
+            <h1>Sign Up for a Free Product Demo</h1>
+            <p>We will give you early access to all our Products and you can provide feedback and changes.</p>
+        </div>
+    </div>
+
+    <form method="POST">
+        <h2 class="centeredHeading">Enter Personal Details</h2>
+
+        <div id="personalDetailsContainer">
+            <label for="name"><b>Name</b></label><br>
+            <input type="text" name="name" id="name" placeholder="Your Name Here" required>
+            <br><br>
+
+            <label for="age"><b>Age</b></label><br>
+            <input type="number" name="age" id="age" placeholder="Your Age Here(atleast 18 years)" min="18" max="80" required>
+            <br><br>
+
+            <label for="email"><b>Email</b></label><br>
+            <input type="email" name="email" id="email" placeholder="Your Email Here" required>
+            <br><br>
+
+            <label for="gender"><b>Gender</b></label><br>
+            <div class="genderSelector">
+                <input type="radio" name="gender" id="male" value="Male"><span>Male</span>
+                <input type="radio" name="gender" id="female" value="Female"><span>Female</span>
+            </div>
+            <br><br>
+
+            <label for="phone"><b>Phone Number</b></label><br>
+            <input type="tel" name="phone" id="phone" placeholder="Your Phone No. Here" required>
+            
+        </div>
+
+        <div id="deliveryDetailsContainer">
+            <h2 class="centeredHeading">Enter Delivery Details</h2>
+            <label for="address"><b>Address</b></label><br>
+            <textarea name="address" id="address" rows="5" placeholder="Your Address Here" required></textarea>
+            <br><br>
+
+            <label for="city"><b>Select City</b></label><br>
+            <select id="city" name="city">
+                <option value="Mumbai">Mumbai</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Goa">Goa</option>
+                <option value="Pune">Pune</option>
+            </select>
+            <br><br>
+
+            
+            <label for="deliveryDate"><b>Choose Delivery Date</b></label><br>
+            <input type="date" name="deliveryDate" id="deliveryDate" required>
+            <br><br>
+
+            <label for="deliveryTime"><b>Choose Delivery Time</b></label><br>
+            <input type="time" name="deliveryTime" id="deliveryTime" required>
+        </div>
+
+        <div id="productDetailsContainer">
+            <h2 class="centeredHeading">Enter Product Details</h2>
+            
+            <div id="productSelector">
+                <label for="products"><b>Choose The Products You Want To Try</b></label>
+
+                <br>
+                <div>
+                    <input id="pizza" name="products" type="checkbox" value="pizza">
+                    <label for="pizza">Pizza</label>
+                    <br>
+                    <input id="lasagna" name="products" type="checkbox" value="lasagna">
+                    <label for="lasagna">Lasagna</label>
+                    <br>
+                    <input id="pasta" name="products" type="checkbox" value="pasta">
+                    <label for="pasta">Pasta</label>
+                    <br>
+                </div>
+                <div>
+                    <input id="risotto" name="products" type="checkbox" value="risotto">
+                    <label for="risotto">Risotto</label>
+                    <br>
+                    <input id="garlicBread" name="products" type="checkbox" value="garlicBread">
+                    <label for="garlicBread">Garlic Bread</label>
+                    <br>
+                    <input id="spaghetti" name="products" type="checkbox" value="spaghetti">
+                    <label for="spaghetti">Spaghetti</label>
+                </div>
+                <br><br>
+            </div>
+
+            <label for="portionSize"><b>Choose Portion Size</b></label><br>
+            <input type="number" placeholder="Size" min="1" max="4" required>
+            <br><br>
+        </div>
+
+
+        
+        
+        <br><br><br>
+        <button type="submit">Place Order</button>
+        <button type="reset">Reset</button>
+    </form>
+  
+    <footer>
+        <span><b>Contact Us:</b> PizzaAwesome@gmail.com</span><br>
+        <span><b>Copyright &copy;</b> PizzaAwesome</span><br>
+        <a href="#top">Move to Top</a>
+        
+    </footer>
+
+</body>
+</html>
